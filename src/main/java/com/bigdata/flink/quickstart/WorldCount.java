@@ -15,7 +15,7 @@ import org.apache.flink.util.Collector;
 public class WorldCount {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        DataStreamSource<String> ds = env.socketTextStream("127.0.0.1", 777);
+        DataStreamSource<String> ds = env.socketTextStream("hadoop162", 8888);
         ds.flatMap(new FlatMapFunction<String, Tuple2<String,Integer>>() {
             @Override
             public void flatMap(String s, Collector<Tuple2<String, Integer>> collector) throws Exception {
