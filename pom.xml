@@ -34,6 +34,15 @@
             <artifactId>flink-clients</artifactId>
             <version>${flink.version}</version>
         </dependency>
+        <!--如果要在本地使用flink页面，需要导入此依赖-->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-runtime-web</artifactId>
+            <version>${flink.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
     </dependencies>
 
 
