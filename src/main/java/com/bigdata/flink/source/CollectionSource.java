@@ -1,4 +1,4 @@
-package com.bigdata.flink.env;
+package com.bigdata.flink.source;
 
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
