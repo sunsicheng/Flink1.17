@@ -29,6 +29,14 @@
             <version>${flink.version}</version>
         </dependency>
 
+        <!--json解析-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-clients</artifactId>
@@ -53,8 +61,6 @@
             <artifactId>flink-connector-datagen</artifactId>
             <version>${flink.version}</version>
         </dependency>
-
-
 
 
     </dependencies>

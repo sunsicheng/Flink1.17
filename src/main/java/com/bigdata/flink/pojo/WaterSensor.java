@@ -1,5 +1,7 @@
 package com.bigdata.flink.pojo;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.Objects;
 
 /**
@@ -68,5 +70,15 @@ public class WaterSensor {
     @Override
     public int hashCode() {
         return Objects.hash(id, ts, vc);
+    }
+
+    public static void main(String[] args) {
+        WaterSensor waterSensor = new WaterSensor("1001", 1692345L, 123);
+        System.out.println(waterSensor.toString());
+        System.out.println(JSONObject.toJSONString(waterSensor));
+        System.out.println("1001".hashCode());
+        System.out.println("1002".hashCode());
+        System.out.println("1003".hashCode());
+        System.out.println("1004".hashCode());
     }
 }
