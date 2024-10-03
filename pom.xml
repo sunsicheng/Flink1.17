@@ -35,6 +35,14 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.83</version>
         </dependency>
+        <!--lombok注解，简化-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version> <!-- 版本号可以根据实际需要选择 -->
+            <scope>provided</scope> <!-- Lombok 仅在编译期需要 -->
+        </dependency>
+
 
 
         <dependency>
