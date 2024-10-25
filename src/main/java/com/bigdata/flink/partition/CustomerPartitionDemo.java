@@ -14,7 +14,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 public class CustomerPartitionDemo extends BaseClass {
 
     public static void main(String[] args) throws Exception {
-        new CustomerPartitionDemo().start();
+        new CustomerPartitionDemo().execut();
     }
 
     @Override
