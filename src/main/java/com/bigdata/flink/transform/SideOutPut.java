@@ -33,7 +33,7 @@ public class SideOutPut extends BaseClass {
 
 
     public static void main(String[] args) throws Exception {
-        new SideOutPut().execut();
+        new SideOutPut().start();
     }
 
     @Override

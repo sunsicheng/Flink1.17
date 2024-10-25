@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class ReduceDemo extends BaseClass {
 
     public static void main(String[] args) throws Exception {
-        new ReduceDemo().execut();
+        new ReduceDemo().start();
     }
 
     @Override
