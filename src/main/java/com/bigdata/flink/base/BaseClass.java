@@ -1,5 +1,7 @@
 package com.bigdata.flink.base;
 
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.configuration.RestOptions;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 
@@ -11,7 +13,9 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 public  abstract class BaseClass {
 
     public void start() throws Exception {
-        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        Configuration conf = new Configuration();
+        conf.setInteger(RestOptions.PORT,999);
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(conf);
         env.setParallelism(1);
         run(env);
         env.execute();
